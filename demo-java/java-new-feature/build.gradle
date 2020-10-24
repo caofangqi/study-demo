@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+
+
+
+allprojects {
+
+    group 'com.caofangqi'
+    version '1.0-SNAPSHOT'
+
+
+    repositories {
+        mavenCentral()
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    sourceCompatibility = '14'
+
+    idea {
+        module {
+            downloadSources = true
+            downloadJavadoc = true
+        }
+    }
+
+
+
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
