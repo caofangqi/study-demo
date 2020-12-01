@@ -36,3 +36,5 @@ gradlew.bat
 gradle-wrapper.jar
 gradle-wrapper.properties
 gradle
+design-patterns-demo/behavioral/observer-pattern/target/
+/.idea/*
